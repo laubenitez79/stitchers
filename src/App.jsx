@@ -1,48 +1,26 @@
-import './App.css'
+// App.jsx
+import { Link } from 'react-router-dom';
+import './App.css';
 
 function App() {
-
   return (
     <>
       <div id="sidebar">
-          <h1>React Router Contacts</h1>
-          <div>
-            <form id="search-form" role="search">
-              <input
-                id="q"
-                aria-label="Search contacts"
-                placeholder="Search"
-                type="search"
-                name="q"
-              />
-              <div
-                id="search-spinner"
-                aria-hidden
-                hidden={true}
-              />
-              <div
-                className="sr-only"
-                aria-live="polite"
-              ></div>
-            </form>
-            <form method="post">
-              <button type="submit">New</button>
-            </form>
-          </div>
-          <nav>
-            <ul>
-              <li>
-                <a href={`/contact`}>Your Name</a>
-              </li>
-              <li>
-                <a href={`/contact`}>Your Friend</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div id="detail"></div>
+        <h1>React Router Contacts</h1>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+            <li>
+              <Link to="/seleccion-de-gorra">Seleccion de Gorras</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="detail"></div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

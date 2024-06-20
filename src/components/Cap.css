@@ -1,0 +1,49 @@
+/* Cap.css */
+.bg-shoe {
+    background: url("shoe-360.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg-ring {
+    background: url("ring-360-0.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg-shoe-hover {
+    background: url("shoe-360.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg-ring-hover {
+    background: url("ring-360.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cap-container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+}
+
+.cap-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#cap-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* Ajusta el tamaño según sea necesario */
+    height: 300px; /* Ajusta el tamaño según sea necesario */
+}
